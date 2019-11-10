@@ -1,0 +1,181 @@
+body{
+    background-color: #aaaaaa;
+}
+.grid1{ /*Dit is de header */
+font-family: 'Courier New', Courier, monospace;
+color: #aaaaaa;
+display: grid;
+grid-template-columns: auto auto auto auto;
+justify-content: center;
+background-size: cover;
+grid-template-rows: auto auto 250px;
+background-position: center;
+font-size: 32px;
+}
+.grid2{
+    display: grid;
+    background-color: #aaaaaa;
+    grid-template-rows: 50px;
+    grid-template-columns: auto auto auto;
+}
+.videoBackground{
+    z-index: -1;
+    background-size: cover;
+    position: static;
+    height: 500px;
+    width: 100%;
+}
+section article{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px
+}
+.grid3{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns:auto 33% 33%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.grid3 article{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.photo1{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%
+}
+.photo2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%
+}
+.grid3 h3{
+    font-size: 24px;
+}
+#footMain{
+    grid-row-start: 3;
+}
+a
+{
+  text-decoration: none;
+  color: #000000;
+  
+  transition: color 0.3s ease;
+}
+a:hover
+{
+  color: #0000FF;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  grid-column-end: 2;
+  grid-column-start: 1;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: sticky;
+  
+  background: #2699fb;
+  border-radius: 3px;
+  z-index: 1;
+}
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+#h1{
+    grid-column: 2/3;
+    text-align: center;
+}
+#h2{
+    grid-row: 2;
+    grid-column: 2/3;
+}
+.club{
+    width: 150px;
+}
+.clubs{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% ;
+    grid-template-rows: auto auto auto;
+    grid-column-start: auto;
+}
+#footSport{
+    grid-row-start: 3;
+}
+#referal{
+    float: right;
+}
+#link{
+    color: #0000FF;
+}
+#toggleCook{
+    display: none;
+}
+#cookiebar{
+    font-size: 32px;
+    color: #444444;
+    position: fixed;
+    bottom: 0px;
+    background-color: #FFFFFF;
+    z-index: 5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#toggleCook:checked ~ #cookiebar {
+    display: none;
+  }

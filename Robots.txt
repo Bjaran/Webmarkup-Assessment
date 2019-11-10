@@ -1,0 +1,4 @@
+student name: your name
+student number: your student number
+student class: your class
+URL student GitHub repository: your GitHub URL
